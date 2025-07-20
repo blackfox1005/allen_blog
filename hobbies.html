@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>我的興趣 - 瑞紘的個人網站</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap');
+
+    body {
+      font-family: 'Noto Sans TC', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7faff;
+      color: #333;
+    }
+
+    header {
+      background-color: #ffffffcc;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #007acc;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ff7f50;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #007acc;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .hobby-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h2 {
+      font-size: 24px;
+      color: #333;
+      margin: 15px 0 10px;
+    }
+
+    .card p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .emoji {
+      font-size: 40px;
+    }
+
+    .back-btn {
+      display: block;
+      width: fit-content;
+      margin: 50px auto 0;
+      padding: 12px 25px;
+      background-color: #007acc;
+      color: white;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back-btn:hover {
+      background-color: #005b9e;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      padding: 20px;
+      color: #aaa;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>瑞紘's Web</h2>
+    <nav>
+      <a href="index.html">首頁</a>
+      <a href="about.html">關於我</a>
+      <a href="hobbies.html">我的興趣</a>
+      <a href="#gallery">作品</a>
+      <a href="#contact">聯絡我</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>我的興趣</h1>
+    <div class="hobby-list">
+
+      <div class="card">
+        <div class="emoji">🎸</div>
+        <h2>彈吉他</h2>
+        <p>我喜歡彈吉他，從基本和弦開始練習，一點一滴感受到音樂的成就感，音符就像故事般敘述我當下的心情。</p>
+      </div>
+
+      <div class="card">
+        <div class="emoji">📷</div>
+        <h2>攝影</h2>
+        <p>街景、光影、轉角的日常，是我鏡頭中的世界。我希望透過攝影捕捉平凡中的細節，並將作品上架分享。</p>
+      </div>
+
+      <div class="card">
+        <div class="emoji">📖</div>
+        <h2>輕小說</h2>
+        <p>我愛閱讀輕小說，也夢想自己寫出能讓人感動或大笑的故事，書中角色的情感和成長是我創作的靈感來源。</p>
+      </div>
+
+      <div class="card">
+        <div class="emoji">🈶</div>
+        <h2>學日文</h2>
+        <p>日文讓我更接近我喜歡的文化與作品。從五十音、自學教材、到讀原文小說，我一步一步朝目標邁進。</p>
+      </div>
+
+    </div>
+
+    <a class="back-btn" href="index.html">← 回首頁</a>
+  </div>
+
+  <footer>
+    © 2025 瑞紘的個人網站
+  </footer>
+
+</body>
+</html>
