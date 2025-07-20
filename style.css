@@ -1,0 +1,24 @@
+.contact-info {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin: 12px 0;
+}
+
+.contact-info a {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
