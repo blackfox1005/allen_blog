@@ -2,38 +2,124 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <title>我的個人網站</title>
+  <title>秀的個人網站</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: "微軟正黑體", sans-serif;
-      background-color: #f9f9f9;
-      padding: 40px;
-      line-height: 1.6;
+      font-family: 'Noto Sans TC', sans-serif;
+      background: linear-gradient(to bottom, #fef8f3, #e6f0ff);
+      color: #333;
     }
-    .container {
-      max-width: 700px;
-      margin: auto;
-      background: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
-    h1 {
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #007acc;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff7f50;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero img {
+      width: 200px;
+      border-radius: 50%;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: 36px;
       color: #007acc;
     }
-    img {
-      width: 150px;
-      border-radius: 50%;
+
+    .hero p {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      background-color: #007acc;
+      color: white;
+      padding: 12px 25px;
+      margin: 0 10px;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .buttons a:hover {
+      background-color: #005b9e;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #999;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>嗨，我是 XXX！</h1>
-    <img src="your-photo.jpg" alt="我的大頭照">
-    <p>歡迎來到我的個人網站！</p>
-    <p>我是一位來自台灣的高中生，興趣包括：吉他、攝影、日文學習與輕小說。</p>
-    <p>這個網站將會紀錄我的成長與學習過程，感謝你的來訪！</p>
-  </div>
+
+  <header>
+    <h2>秀's Web</h2>
+    <nav>
+      <a href="#about">關於我</a>
+      <a href="#hobbies">我的興趣</a>
+      <a href="#gallery">作品</a>
+      <a href="#contact">聯絡我</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="your-image.jpg" alt="動漫風大頭照">
+    <h1>嗨，我是秀！</h1>
+    <p>一位熱愛攝影、吉他、輕小說與日文的高中生。</p>
+    <div class="buttons">
+      <a href="#about">了解我</a>
+      <a href="#gallery">看作品</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 秀的個人網站 | Powered by GitHub Pages
+  </footer>
+
 </body>
 </html>
