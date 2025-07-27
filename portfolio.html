@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>瑞紘的個人網站</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Noto Sans TC', sans-serif;
+      background: linear-gradient(to bottom, #fef8f3, #e6f0ff);
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #007acc;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff7f50;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero img {
+      width: 200px;
+      border-radius: 50%;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      color: #007acc;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      background-color: #007acc;
+      color: white;
+      padding: 12px 25px;
+      margin: 0 10px;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .buttons a:hover {
+      background-color: #005b9e;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>瑞紘's Web</h2>
+    <nav>
+  <a href="about.html">關於我</a>
+  <a href="hobbies.html">我的興趣</a>
+  <a href="works.html">作品</a>
+  <a href="contact.html">聯絡我</a>
+</nav>
+
+  </header>
+
+<div class="container">
+  <h1>AI 作品集</h1>
+
+  <div class="filter-buttons">
+    <button onclick="filterProjects('all')">所有</button>
+    <button onclick="filterProjects('遊戲')">遊戲</button>
+    <button onclick="filterProjects('自製小程式')">自製小程式</button>
+    <button onclick="filterProjects('網站設計')">網站設計</button>
+    <button onclick="filterProjects('攝影作品')">攝影作品</button>
+    <button onclick="filterProjects('漫畫')">漫畫</button>
+    <button onclick="filterProjects('小說')">小說</button>
+    <button onclick="filterProjects('其他')">其他</button>
+  </div>
+
+  <div class="project-grid" id="projectGrid">
+
+<div class="card" data-category="漫畫">
+  <img src="comic_cover.png" alt="第11層">
+  <h2>第11層</h2>
+  <p>在一間只有10層樓的學校，有著一個"第11層"的傳說</p>
+  <div style="margin-bottom: 10px;">
+    <span style="font-size: 0.8em; background: #eee; color: #666; padding: 3px 6px; border-radius: 3px;">#AI漫畫</span>
+    <span style="font-size: 0.8em; background: #eee; color: #666; padding: 3px 6px; border-radius: 3px;">#科幻</span>
+  </div>
+ <a href="comic_ep1.html" target="_blank">📖 開始閱讀</a>
+</div>
+
+
+  </div>
+</div>
+
+<script>
+  function filterProjects(category) {
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+      if (category === 'all' || card.getAttribute('data-category') === category) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
