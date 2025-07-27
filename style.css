@@ -22,3 +22,25 @@
 .contact-info a:hover {
   text-decoration: underline;
 }
+
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.profile img {
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.description {
+  flex: 1;
+  font-size: 18px;
+  line-height: 1.6;
+}
